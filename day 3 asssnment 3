@@ -1,0 +1,42 @@
+var obj={
+    name:"johndoe",
+    age:23,
+    salary:33.33
+};
+obj.gender="male";
+obj.attendance=["mon","tue","wed"];
+console.log(obj);
+for(var i in obj){
+console.log(i,obj[i]);
+}
+//how the nested  objects can be accessed 
+var obj={
+    name:"johndoe",
+    age:23,
+    salary:33.33
+};
+//i want to add a new key pair 
+//gender:male
+//Syntax:objectname.keyname=value
+obj.gender="male";
+obj.attendance={
+  day:"monday"
+};
+console.log(obj.attendance.day);
+
+//JSON
+var obj1={
+  "name":"john doe",
+  "age":"23",
+  "salary":"33.33"
+};
+
+console.log(obj1.name);
+for(var key in obj1){
+console.log(key,obj1[key]);
+}
+//Array Of Json Objects
+var arr=[{"name":"john","age":"23"},{"name":"tina","age":"24"}];
+for(var i=0;i<arr.length;i++){
+console.log(arr[i].name);
+}
